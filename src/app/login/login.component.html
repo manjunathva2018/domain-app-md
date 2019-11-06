@@ -1,0 +1,22 @@
+<div fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="card">
+        <mat-card-header>
+            <div mat-card-avatar class=""></div>
+            <mat-card-title>Login</mat-card-title>
+            <mat-card-subtitle>To continue</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <mat-form-field appearance="outline" class="input-full-width">
+                    <mat-label>Email :</mat-label>
+                    <input type="email" matInput placeholder="Enter email" formControlName="email">
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="input-full-width">
+                    <mat-label>Password :</mat-label>
+                    <input type="password" matInput placeholder="Enter password" formControlName="password">
+                </mat-form-field>
+                <button type="submit" mat-raised-button color="primary">Login</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

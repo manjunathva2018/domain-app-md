@@ -1,6 +1,8 @@
 {
-  "name": "domain-app",
-  "version": "0.0.0",
+  "name": "com.aroha.domainapp",
+  "displayName": "Domain-App",
+  "version": "0.1.0",
+  "description": "A internal app for aroha technologies.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,13 +14,18 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.4",
+    "@angular/cdk": "^8.2.3",
     "@angular/common": "~8.2.4",
     "@angular/compiler": "~8.2.4",
     "@angular/core": "~8.2.4",
+    "@angular/flex-layout": "^8.0.0-beta.27",
     "@angular/forms": "~8.2.4",
+    "@angular/material": "^8.2.3",
     "@angular/platform-browser": "~8.2.4",
     "@angular/platform-browser-dynamic": "~8.2.4",
     "@angular/router": "~8.2.4",
+    "cordova-browser": "^6.0.0",
+    "hammerjs": "^2.0.8",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
@@ -28,10 +35,11 @@
     "@angular/cli": "~8.3.2",
     "@angular/compiler-cli": "~8.2.4",
     "@angular/language-service": "~8.2.4",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "cordova-plugin-whitelist": "^1.3.4",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
@@ -43,5 +51,18 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Manjunath V A",
+  "license": "Apache-2.0",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    },
+    "platforms": [
+      "browser"
+    ]
   }
 }
