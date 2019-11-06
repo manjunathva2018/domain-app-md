@@ -4,6 +4,7 @@
 /www
 /tmp
 /out-tsc
+/platforms/browser/www
 # Only exists if Bazel was run
 /bazel-out
 
