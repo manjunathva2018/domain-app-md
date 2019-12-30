@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./domain.component.css']
 })
 export class DomainComponent implements OnInit {
-  private totalDomain:any=[];
+  public totalDomain:any=[];
   constructor() { }
 
   ngOnInit() {
